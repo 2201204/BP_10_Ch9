@@ -30,9 +30,9 @@ import random                  # 랜덤 라이브러리 불러옴
 t = turtle.Turtle()            
 s = turtle.Screen()
 def draw_shape(t, c, length, sides, x, y):
-    t.up()
+    t.up()                     # 펜을 든다.
     t.goto(x, y)               # 좌표이동
-    t.down()
+    t.down()                   # 펜을 내린다
     t.fillcolor(c)             # 색선정
     angle = 360.0 / sides
     t.begin_fill()
@@ -50,9 +50,9 @@ for i in range(10):
     y = random.randint(-200, 200)
     draw_shape(t, color, side_length, sides, x, y)
  6.
-import turtle
+import turtle                 # 터틀 라이브러리를 불러옴
 import random
-t = turtle.Turtle()
+t = turtle.Turtle()           # t를 거북이로 선정
 s = turtle.Screen()
 s.bgcolor("black")
 def draw_star(aturtle, colour,length, x, y):
